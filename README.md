@@ -575,7 +575,7 @@ You can download the PDF and Epub version of this repository from the latest run
     
 11. ### Why should we not update the state directly?
 
-    If you try to update state directly then it won't re-render the component.
+    If you try to update the state directly then it won't re-render the component.
 
     ```javascript
     //Wrong
@@ -1039,9 +1039,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     1. **Mounting:** The component is ready to mount in the browser DOM. This phase covers initialization from `constructor()`, `getDerivedStateFromProps()`, `render()`, and `componentDidMount()` lifecycle methods.
 
-    2. **Updating:** In this phase, the component get updated in two ways, sending the new props and updating the state either from `setState()` or `forceUpdate()`. This phase covers `getDerivedStateFromProps()`, `shouldComponentUpdate()`, `render()`, `getSnapshotBeforeUpdate()` and `componentDidUpdate()` lifecycle methods.
+    2. **Updating:** In this phase, the component gets updated in two ways, sending the new props and updating the state either from `setState()` or `forceUpdate()`. This phase covers `getDerivedStateFromProps()`, `shouldComponentUpdate()`, `render()`, `getSnapshotBeforeUpdate()` and `componentDidUpdate()` lifecycle methods.
 
-    3. **Unmounting:** In this last phase, the component is not needed and get unmounted from the browser DOM. This phase includes `componentWillUnmount()` lifecycle method.
+    3. **Unmounting:** In this last phase, the component is not needed and gets unmounted from the browser DOM. This phase includes `componentWillUnmount()` lifecycle method.
 
     It's worth mentioning that React internally has a concept of phases when applying changes to the DOM. They are separated as follows
 
@@ -1053,7 +1053,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
     React 16.3+ Phases (or an [interactive version](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/))
 
-    ![phases 16.3+](images/phases16.3.jpg)
+    ![phases 16.4+](images/phases16.4.png)
 
     Before React 16.3
 
@@ -1317,7 +1317,7 @@ You can download the PDF and Epub version of this repository from the latest run
     
 46. ### What are fragments?
 
-    It's common pattern in React which is used for a component to return multiple elements. *Fragments* let you group a list of children without adding extra nodes to the DOM.
+    It's a common pattern in React which is used for a component to return multiple elements. *Fragments* let you group a list of children without adding extra nodes to the DOM.
 
     ```jsx harmony
     render() {
